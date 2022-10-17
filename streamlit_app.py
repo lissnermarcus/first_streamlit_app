@@ -12,6 +12,7 @@ streamlit.text("🥑🍞 avocado toast")
 
 streamlit.header("🍌🥭 build your own fruit smoothie")
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+my_fruit_list = my_fruit_list.set_index("fruit")
 #streamlit.dataframe(my_fruit_list)
 
 # lets put a pick list here so they can pick the fruit they want to include
